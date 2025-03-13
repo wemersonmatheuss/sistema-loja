@@ -1,0 +1,5 @@
+package loja.interfaces;
+
+public interface ProdutoRepository {
+
+}
