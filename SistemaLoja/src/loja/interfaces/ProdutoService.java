@@ -1,9 +1,12 @@
 package loja.interfaces;
 
 import loja.entidades.Produto;
+import java.util.List;
 
 public interface ProdutoService {
-	 void cadastrarProduto(int id, String nome, double preco);
-	    Produto obterProduto(int id);
+	  void cadastrar(Produto produto);
+	    Produto buscarPorId(int id);
+	    void atualizar(Produto produto);
+	    void remover(int id);
 
 }
