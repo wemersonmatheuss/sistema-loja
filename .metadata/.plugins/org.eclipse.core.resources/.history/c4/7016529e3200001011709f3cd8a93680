@@ -1,5 +1,0 @@
-package loja.interfaces;
-
-public interface ProdutoService {
-
-}
