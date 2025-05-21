@@ -8,6 +8,10 @@ public class Cliente extends Pessoa {
         this.endereco = endereco;
     }
 
+    public Cliente() {
+        super("", "");
+    }
+
     public String getEndereco() {
         return endereco;
     }
@@ -16,7 +20,7 @@ public class Cliente extends Pessoa {
         this.endereco = endereco;
     }
 
-    
+    @Override
     public void exibirInformacoes() {
         System.out.println("Cliente: " + nome + ", CPF: " + cpf + ", Endereço: " + endereco);
     }

@@ -1,22 +1,28 @@
 package loja.entidades;
 
-public class Funcionario extends Pessoa {
-    private double salario;
+import java.math.BigDecimal;
 
-    public Funcionario(String nome, String cpf, double salario) {
+public class Funcionario extends Pessoa {
+    private BigDecimal salario;
+
+    public Funcionario(String nome, String cpf, BigDecimal salario) {
         super(nome, cpf);
         this.salario = salario;
     }
 
-    public double getSalario() {
+    public Funcionario() {
+        super("", "");
+    }
+
+    public BigDecimal getSalario() {
         return salario;
     }
 
-    public void setSalario(double salario) {
+    public void setSalario(BigDecimal salario) {
         this.salario = salario;
     }
 
-    
+    @Override
     public void exibirInformacoes() {
         System.out.println("Funcionário: " + nome + ", CPF: " + cpf + ", Salário: " + salario);
     }

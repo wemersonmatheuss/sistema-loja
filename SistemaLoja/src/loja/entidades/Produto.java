@@ -1,38 +1,45 @@
 package loja.entidades;
 
+import java.math.BigDecimal;
+
 public class Produto {
-	 private int id;
-	    private String nome;
-	    private double preco;
-	    
-	    public Produto(int id, String nome, double preco) {
-	        this.id = id;
-	        this.nome = nome;
-	        this.preco = preco;
-	    }
+	private int id;
+	private String nome;
+	private BigDecimal preco;
 
-	    public int getId() {
-	        return id;
-	    }
+	public Produto() {}
 
-	    public void setId(int id) {
-	        this.id = id;
-	    }
+	public Produto(int id, String nome, BigDecimal preco) {
+		this.id = id;
+		this.nome = nome;
+		this.preco = preco;
+	}
 
-	    public String getNome() {
-	        return nome;
-	    }
+	public int getId() {
+		return id;
+	}
 
-	    public void setNome(String nome) {
-	        this.nome = nome;
-	    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-	    public double getPreco() {
-	        return preco;
-	    }
+	public String getNome() {
+		return nome;
+	}
 
-	    public void setPreco(double preco) {
-	        this.preco = preco;
-	    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public BigDecimal getPreco() {
+		return preco;
+	}
+
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
+
+	public void exibirInformacoes() {
+		System.out.println("Produto: " + nome + ", ID: " + id + ", Preço: " + preco);
+	}
 }
-
